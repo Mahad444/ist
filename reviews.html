@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+</head>
+<link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+<body>
+    <section class=" header">
+        <nav><a href="index.html"><img src="C:\Users\hp\OneDrive\Desktop\practice\images\logo.jpg" alt=""></a>
+           <div class="nav-links">
+               <ul>
+                  <li class="nav-item"><a href="index.html">Home</a></li>
+                   <li class="nav-item"><a href="Services.html">Services</a></li>
+                   <li class="nav-item"><a href="ABOUT US.html">About Us</a></li>
+                   <li class="nav-item"><a href="Contactus.html">Contact Us</a></li>
+                   <li class="nav-item"><a href="form.html">Registration</a></li>
+                   <li class="nav-item"><a href="reviews.html">Reviews</a></li>
+                   <li class="nav-item"><a href="faq.html">FAQ</a></li>
+                   <li class="nav-item"><a href="traffic.html">Traffic Rules</a></li>
+                   </ul>
+                   <div >
+    
+                   </div>
+                  </nav>
+           
+          </section>
+          <div><h1 class="head">Mahad's Driving School</h1></div>
+    <div class="testimonials">
+        <div class="inner">
+            <h1>Reviews</h1>
+            <div class="border"></div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class="testimonia">
+                        <img src="./images/one.jpg" alt="">
+                        <div class="name">Mahad Said</div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aliquam! Dolor dignissimos ut odit id?</p>
+                     </div>
+                </div>
+                <div class="col">
+                    <div class="testimonia">
+                        <img src="./images/two.jpg" alt="">
+                        <div class="name">Zakaria Abdi</div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aliquam! Dolor dignissimos ut odit id?</p>
+                     </div>
+                </div><div class="col">
+                    <div class="testimonia">
+                        <img src="./images/three.jpg" alt="">
+                        <div class="name">Shuaib Osman</div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aliquam! Dolor dignissimos ut odit id?</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<style>*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+    .tetimonials{
+        padding: 40px 0;
+        background: #d74141;
+        color: #d23434;
+        text-align: center;
+    }
+    .inner{
+        max-width: 1200px;
+        margin: auto;
+        overflow: hidden;
+        padding: 0 20px;
+    }
+    .border{
+        width: 160px;
+        height: 5px;
+        background: #6ab04c;
+        margin: 26px auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .col{
+        flex: 33.33%;
+        max-width: 33.33%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    .tetimonia{
+        background: rgb(214, 56, 56);
+        padding: 30px;
+
+    }
+    .tetimonia .hud{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .name{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 20px 0;
+    }
+    .stars{
+        color: #6ab04c;
+    }
+    .head{
+    text-align: center;
+    padding: 30px
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+}
+nav img{
+    width: 75px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    min-height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;}
+    @media screen and (max-width:960px){
+        .col{
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width:660px){
+
+        .col{
+            flex: 100%;
+            max-width: 100%;
+        }
+        
+    }
+</style>
+</html>

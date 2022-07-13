@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="#">
+            <div class="userdetails">
+                <div class="inputbox">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter Your Name" type="required">
+                </div>
+                <div class="inputbox">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Username" type="required">
+                </div>
+                <div class="inputbox">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter phone number" type="required">
+                </div>
+                <div class="inputbox">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter Your Email" type="required">
+                </div>    
+                 <div class="inputbox">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter password" type="required">
+                </div>
+                 <div class="inputbox">
+                    <span class="details">Confirm password</span>
+                    <input type="password" placeholder="Enter password" type="required">
+                </div>
+            </div>
+        <div class="genderdetails">
+            <input type="radio" name="gender" id="dotone">
+            <input type="radio" name="gender" id="dottwo">
+            <span class="gendertitle">Gender</span>
+            <div class="category">
+                <label for="dotone">
+                    <span class="dotone"></span>
+                    <span class="gender">Male</span>
+                </label>
+                <label for="dottwo">
+                    <span class=" dotone dottwo"></span>
+                    <span class="gender">Female</span>
+                </label>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </div>
+        </form>
+    
+    </div>
+    
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg,#71b7e6,#9b59b6);
+        padding: 10px;
+        }
+        .container{
+            max-width: 700px;
+            width: 100%;
+            background: #fff;
+            padding: 25px 30px;
+        }
+        .container .title{
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+        .container .title::before{
+            content:'';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 30px;
+            width: 30px;
+        }
+        .container form .userdetails{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        form .userdetails .inputbox{
+            margin: 20px 0 12px 0;
+            margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+        }
+        .userdetails .inputbox .details{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .userdetails .inputbox input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width:2px ;
+            transition: all 0.3s ease;
+             }
+             .userdetails .inputbox input:focus,
+             .userdetails .inputbox input:valid{
+                border-color: #9b59b6;
+
+             }
+             form .genderdetails .gendertitle{
+                font-size: 20px;
+                font-weight: 500;
+             }
+             form .genderdetails .category{
+                display: flex;
+                width: 80%;
+                margin: 14px 0;
+                justify-content: space-between;
+             }
+             .genderdetails .category label{
+                display: flex;
+
+             }
+             .genderdetails .category .dotone{
+                height: 18px;
+                width: 18px;
+                background:gainsboro;
+                border-radius: 50%;
+                margin-right: 10px;
+              border: 5px solid transparent; 
+              transition: all 0.3s ease; 
+             }
+             #doteone:checked ~ .category label .one
+             {
+                background-color: aquamarine;
+                background: #9b59b6;
+             }
+             form input[type="radio"]{
+                display: none;
+             }
+             form .button{
+                height: 45px;
+                margin: 45px 0;
+             }
+             form .button input{
+                height: 100%;
+                width: 100%;
+                outline: none;
+                color: #fff;
+                border: none;
+                font-size: 18px;
+                font-weight: 500;
+                background: linear-gradient(135deg,#71b7e6,#9b59b6);
+             }
+             
+             form .button input:hover{
+                background: linear-gradient(-135deg,#71b7e6,#9b59b6);}
+                
+             @media(max-width:584px){
+                .container {
+                    max-width: 100%;
+                }
+                form .userdetails .inputbox{margin-bottom: 15px;
+                    width:100%;
+
+                }
+             }
+</style>
+</html>

@@ -1,0 +1,121 @@
+@import url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css);
+
+
+
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    background-color: #4d90e1;
+}
+.head{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px;
+}
+.automatic{
+    display:flex;
+    padding: 5px;
+ width: 80% auto;
+}
+.automatic .muhib h3{
+    text-decoration: none;
+}
+.manual{
+    margin-left: 75px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+.muhib{
+    background-color: #a2d0cb;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    
+    }
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+}
+nav img{
+    width: 75px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    min-height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: rgb(40, 33, 33);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 20px;
+}
+.text-box p{
+    margin: 0 0 40px;
+    font-size: 14px;
+    color: black;
+}
+.auto{
+    display: grid;
+    margin: 20px;
+    margin-top: 2px;
+    background-color: #192d76;
+    color: #fff;
+}
+.auto a{
+    text-decoration: none;
+    color: #fff;
+}
+.auto a:hover{
+    color: aquamarine;
+}
+.auto-2{
+    display:inline-flex;
+}
+footer{
+    background-color: #b4b230;
+}
+footer ul a{
+    text-decoration: none;
+    text-align: center;
+}
+footer li{
+    list-style: none;
+    text-align: right;
+    color: #f44336;
+}

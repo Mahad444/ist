@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <link rel="stylesheet" href="./Bootstrap/Bootstrap/bootstrap/css/bootstrap.min.css">
+</head>
+<body><section class=" header">
+    <nav><a href="index.html"><img src="C:\Users\hp\OneDrive\Desktop\practice\images\logo.jpg" alt=""></a>
+       <div class="nav-links">
+           <ul>
+              <li class="nav-item"><a href="index.html">Home</a></li>
+               <li class="nav-item"><a href="Services.html">Services</a></li>
+               <li class="nav-item"><a href="ABOUT US.html">About Us</a></li>
+               <li class="nav-item"><a href="Contactus.html">Contact Us</a></li>
+               <li class="nav-item"><a href="form.html">Registration</a></li>
+               <li class="nav-item"><a href="reviews.html">Reviews</a></li>
+               <li class="nav-item"><a href="faq.html">FAQ</a></li>
+               <li class="nav-item"><a href="traffic.html">Traffic Rules</a></li>
+               </ul>
+               <div >
+
+               </div>
+              </nav>
+       
+      </section>
+      <div><h1 class="head">Mahad's Driving School</h1></div>
+    <section class="rules">
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque ut cumque odit minima distinctio rerum iusto veniam, expedita temporibus consequatur, necessitatibus delectus, sed veritatis suscipit qui. Quasi, amet voluptates.</p><br>
+            <h1>Below Are Commonly Used Traffic Rules</h1>
+        </div>
+        <div class="signs">
+        <ul><p><h4>Signs Giving Oders Must Be Obeyed Strictly</h4></p>
+            <li><a href="./images/signs-giving-orders.jpg"><h3>Signs Giving Orders</h3></a></li>
+            <p><h4>Signs Giving Warnings are Mostly Triangle in Shape</h4></p>
+        <li><a href="./images/Additional-road-signs.png"><h3>Signs Giving Warnigs</h3></a></li>
+        <p><h4>Signs Showing Construction In Progress</h4></p>
+        <li><a href="./images/construction.jpg"><h3>Signs Showing Construction</h3></a></li>
+        <p><h4>Signs Giving Information To Drivers</h4></p>
+        <li><a href="./images/infomation.jpg"><h3>Signs Of Information</h3></a></li>
+        </ul></div>
+    </section>
+    
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        background: linear-gradient(135deg,#58b6f4,#9562dc)
+    }
+    .rules{
+        background-color: rgb(140, 243, 243);
+        margin: 20px auto;
+         }
+         .signs h4{
+            margin-bottom: 12px;
+            padding: 10px;
+            border-radius: 15px;
+         }
+.signs li a{
+    text-align: center;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.head{
+    text-align: center;
+    padding: 30px
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+}
+nav img{
+    width: 75px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    min-height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;}
+</style>
+</html>
